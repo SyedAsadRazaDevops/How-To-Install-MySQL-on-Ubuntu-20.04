@@ -52,14 +52,23 @@ Choose one of the three levels of password validation:
 2 - Strong. A password containing at least 8 characters, including numeric, mixed case characters, and special characters, and compares the password to a dictionary file.
 ```
 
-## Step 4— Testing MySQL
+## Step 4 — Testing MySQL
 
 ```
 systemctl status mysql.service
 ```
 
-
 https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
 
 
+## Step 5 —To Create a New Database/User and Grant Permissions
 
+```
+CREATE DATABASE `test`;
+```
+```
+CREATE USER 'test1'@'localhost' IDENTIFIED BY 'Test@123';
+```
+```
+GRANT ALL PRIVILEGES ON *.* TO 'test1'@'localhost';
+```
