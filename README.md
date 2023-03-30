@@ -67,6 +67,9 @@ https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-
 CREATE DATABASE `test`;
 ```
 ```
+USE test;
+```
+```
 CREATE USER 'test1'@'localhost' IDENTIFIED BY 'Test@123';
 ```
 ```
