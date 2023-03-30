@@ -29,8 +29,6 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 ```
 After making this change, exit the MySQL prompt:
 
-**you can run the "mysql_secure_installation" script without issue.**
-
 To authenticate as the root MySQL user using a password, run this command:
 ```
 mysql -u root -p
@@ -41,6 +39,14 @@ Then go back to using the default authentication method using this command:
 ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
 ```
 This will mean that you can once again connect to MySQL as your root user using the sudo mysql command.
+## - Apply Security
+
+you can run the **"mysql_secure_installation"** command without issue.
+Choose one of the three levels of password validation:
+
+0 - Low. A password containing at least 8 characters.
+1 - Medium. A password containing at least 8 characters, including numeric, mixed case characters, and special characters.
+2 - Strong. A password containing at least 8 characters, including numeric, mixed case characters, and special characters, and compares the password to a dictionary file.
 
 
 ## — Testing MySQL
