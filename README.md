@@ -39,7 +39,8 @@ Then go back to using the default authentication method using this command:
 ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
 ```
 This will mean that you can once again connect to MySQL as your root user using the sudo mysql command.
-## - Apply Security
+
+## Step 3 - Apply Security
 
 you can run the **"mysql_secure_installation"** command without issue.
 Choose one of the three levels of password validation:
@@ -49,7 +50,7 @@ Choose one of the three levels of password validation:
 2 - Strong. A password containing at least 8 characters, including numeric, mixed case characters, and special characters, and compares the password to a dictionary file.
 
 
-## — Testing MySQL
+## Step 4— Testing MySQL
 
 ```
 systemctl status mysql.service
