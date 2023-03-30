@@ -63,6 +63,8 @@ https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-
 
 ## Step 5 —To Create a New Database/User and Grant Permissions
 
+Once you have access to the MySQL prompt, you can create a new user with a CREATE USER and DATABASE statement.
+These follow this general syntax:
 ```
 CREATE DATABASE `test`;
 ```
@@ -72,6 +74,11 @@ USE test;
 ```
 CREATE USER 'test1'@'localhost' IDENTIFIED BY 'Test@123';
 ```
+The general syntax for granting user privileges is as follows:
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'test1'@'localhost';
+```
+Many guides suggest running the FLUSH PRIVILEGES command immediately after a CREATE USER or GRANT statement in order to reload the grant tables.
+```
+FLUSH PRIVILEGES;
 ```
