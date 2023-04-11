@@ -30,7 +30,7 @@ jobs:
         run: echo Hello, world!
 
       - name: Run a one-line script
-        run: pwd;
+        run: pwd;git clone https://github.com/SyedAsadRazaDevops/How-To-Install-MySQL-on-Ubuntu-20.04.git;
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
